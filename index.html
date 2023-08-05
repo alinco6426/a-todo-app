@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Todo app</title>
+  <style>
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="main-content">
+      <div class="head">
+        <div>
+          <h1>Todo</h1>
+        </div>
+        <!-- toggle switch -->
+       <div id="switch">
+        <img id="image" src="icon-sun.svg" alt="icon-sun">
+      </div>
+      </div>
+      <!-- screen section -->
+       <div class="input-field" id="screen">
+         <input type="text" id="input" placeholder="Enter your prompt..." >
+          <label for="create">
+            <input type="checkbox" id="create">
+            <button type="submit" id="create-todo" onclick="addToList()" class="create-button">
+              <img src="icon-check.svg" alt="icon-check">
+              <span class="create-icon">&plus;</span>
+            </button>
+          </label>
+       </div>
+       <!-- list container -->
+       <div class="container" id="container">
+         <ul id="list"></ul>
+         <!-- footer & buttons -->
+         <div class="foot" id="foot">
+          <div class="foot-div">
+            <span>
+              <p><a class="item-counter" id="item-counter" href="#"><small id="demo">0 / 0</small> items left</a></p>
+            </span>
+            <span>
+              <p><a href="#" class="white clear-btn" id="clear-button">Clear Completed</a></p>
+           </span>
+          </div>
+          <div class="foot-div">
+              <p><a href="#" class="white" id="all">All</a></p>
+              <p><a href="#" class="white"  id="active">Active </a></p> 
+              <p><a href="#"  class="white" id="completed">Completed</a></p>
+          </div>
+         </div>
+       </div>
+       <!-- <p class="drag">
+         Drag and drop to reorder list
+       </p> -->
+     </div>   
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
